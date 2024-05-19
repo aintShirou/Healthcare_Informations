@@ -1,0 +1,401 @@
+body,html{
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, section, footer{
+    border: 0px solid transparent;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.home{
+    height: auto;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(./img/bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 270px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    transition: background-color 0.5s ease;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; 
+}
+
+.logo h1 {
+    margin: 0;
+    padding: 0px;
+    font-size: 24px;
+}
+
+.logo .h {
+    color: white;
+}
+
+.logo .i {
+    color: #89CFF0;
+}
+
+.navigation {
+    margin-right: 20px; 
+}
+
+.navigation ul{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 80px; 
+    font-size: 17px;
+    position: relative;
+
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navigation ul li a:after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: #89CFF0;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navigation ul li a:hover::after{
+    width: 100%;
+}
+
+.navigation ul li a:hover{
+    color: #89CFF0;
+}
+
+.container{
+    margin-top: 100px;
+    margin-left: 150px;
+    align-items: center;
+}
+
+.container h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+span{
+    color: #89CFF0;
+  }
+
+.info{
+ margin-top: 70px;
+}
+
+.col p{
+    color: white;
+    max-width: 80%;
+}
+
+
+.more {
+    margin-top: 20px;
+    border: 2px solid #89CFF0;
+    border-radius: 15px;
+    background-color: #2e2e2e;
+    color: #89CFF0;
+    width: 160px;
+    height: 60px;
+    font-size: 25px;
+    margin: 30px 10px; 
+  }
+  
+.more:hover {
+    background-color: #89CFF0;
+    color: #FFFFFF;
+    box-shadow: 0 0 20px #89CFF0;
+}
+
+/* Learn */
+
+.learn{
+    background-color: #000000;
+    box-shadow: 0 0 20px #89CFF0;
+    padding-bottom: 50px;
+}
+.abstract h1{
+    font-weight: 600;
+    color: #89CFF0;
+}
+
+.abstract p{
+    max-width: 90%;
+    color: white;
+}
+
+/* EHR, CDSS, PACS */
+
+.service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    box-shadow: 0 0 20px #89CFF0;
+    padding-top:100px;
+    padding-bottom: 130px;
+}
+
+.con-service {
+    width: 80%;
+    text-align: left;
+    color: white;
+}
+.ehrimg {
+    width: 800px;
+    padding-bottom: 60px;
+  }
+
+.con-service h2{
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-bottom: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #89CFF0;
+}
+
+.con-service .risk{
+    text-align: center;
+}
+
+.con-service .services{
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.con-service .services .card{
+    width: 330px;
+    height: 230px;
+    text-align: center;
+    background: #222;
+    padding: 20px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.con-service .services .card p{
+    color: white;
+}
+
+.con-service .services .card:hover{
+    background: #89CFF0;
+}
+
+.con-service .services .card .content{
+    transition: 0.3s;
+}
+
+.con-service .services .card:hover .content{
+    transform: scale(1.07);
+}
+
+.con-service .services .card .content .icon{
+    padding: 5px 0;
+    color: white;
+}
+
+.con-service .services .card .content .icon i{
+    font-size: 40px;
+}
+
+.con-service .services .card:hover .content .title{
+    color: white;
+}
+
+.con-service .services .card .content .title{
+    padding: 5px 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: #89CFF0;
+    transition: 0.3s;
+}
+/* overview */
+
+.overview{
+    background-color: #000000;
+    box-shadow: 0 0 20px #89CFF0;
+    padding-bottom: 50px;
+}
+
+.about2 h1{
+    color: #89CFF0;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+}
+
+h3{
+    color: #89CFF0;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 30px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #89CFF0;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 20px 0;
+
+}
+
+.tab-contents ul li span{
+    color: #89CFF0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.tab-contents ul li p{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 3px;
+}
+.tab-contents{
+    display: none;
+}
+
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+.BnC{
+    padding-top: 80px;
+}
+
+.BnC p , .Conclusion p{
+    color: white;
+}
+
+.BnC h1, .Conclusion h1{
+    color: #89CFF0;
+}
+
+/* references */
+
+footer {
+    background-color: #000000;
+    box-shadow: 0 0 20px #89CFF0;
+    padding-bottom: 50px;
+}
+
+footer h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+footer ol {
+    padding-left: 20px;
+}
+
+footer ol li {
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer ol li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer ol li a:hover {
+    text-decoration: underline;
+}
+
+
+h2 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+details {
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+details summary {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+details p {
+    margin-left: 20px;
+    color: white;
+}
+
+hr{
+    max-width: 90%;
+    color: #89CFF0;
+}
